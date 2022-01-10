@@ -19,15 +19,32 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
 /* можно убрать точки у li c class="list"*/
 .list {
+  padding: 0%;
+  margin: 0;
   list-style: none;
 }
 /* можно убрать точки у всех li */
 /* ul {
   list-style: none;
 } */
-
+.button primary {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px, 32px;
+}
 .button {
   list-style: none;
 }
@@ -39,6 +56,20 @@ button {
 /* убрал нижнее подчеркивание у всех ссылок */
 a {
   text-decoration: none;
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid coral;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid coral;
 }
 
 /* Header */
@@ -92,15 +123,18 @@ a {
 }
 
 /* Hero */
+.hero {
+  text-align: center;
+}
 
 .hero .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--title-text-color);
-  font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
@@ -109,15 +143,29 @@ a {
   color: var(--accent-color);
 } */
 
+button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.button .filter:hover,
+.button .filter:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
 .button.primary {
   color: #e5e5e5;
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.86;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
@@ -137,6 +185,8 @@ a {
 /* Section */
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 700;
@@ -200,21 +250,4 @@ a {
 
 .worklist {
   color: var(--title-text-color);
-}
-
-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-}
-
-.button .filter:hover,
-.button .filter:focus {
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
 }

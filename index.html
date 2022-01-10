@@ -8,26 +8,33 @@
     <title>WebStudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
     <!-- Шапка сайта -->
     <header class="page-header">
-        <nav>
-            <a class="logo" href=""><span class="logo-accent">Web</span>Studio</a>
-
-            <ul class="site-nav list">
-                <li><a href="" class="link current">Студия</a></li>
-                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="" class="link">Контакты</a></li>
+        <div class="header">
+            <nav>
+                <a class="logo" href=""><span class="logo-accent">Web</span>Studio</a>
+            
+                <ul class="site-nav list">
+                    <li><a href="" class="link current">Студия</a></li>
+                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li><a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth-nav list">
+                <li><a class="mail" href="mailto:info@example.com" target="_blank">info@example.com</a>
+                <li><a class="tel" href="tel:+380991111111">+38 099 111 11 11</a>
             </ul>
-        </nav>
-        <ul class="auth-nav list">
-            <li ><a class="mail" href="mailto:info@example.com" target="_blank">info@example.com</a>
-            <li><a class="tel" href="tel:+380991111111">+38 099 111 11 11</a>
-        </ul>
+
+        </div>
+        
     </header>
+
+    <div class="conteiner"></div>
 
     <main>
         <!-- Герой -->
@@ -91,32 +98,35 @@
 
         <!-- Наша команда -->
         <section class="section-team">
-            <h2 class="section-title">Наша команда</h2>
-            <ul class="team list">
-                <li>
-                    <img src="./images/Игорь_Демьяненко.jpg" alt="Фото Игоря Демьяненко" width="270">
-                    <h3 class="team-name">Игорь Демьяненко</h3>
-                    <p lang="en">Product Designer</p>
-                </li>
-
-                <li>
-                    <img src="./images/Ольга_Репина.jpg" alt="Фото Ольги Репиной" width="270">
-                    <h3 class="team-name">Ольга Репина</h3>
-                    <p lang="en">Frontend Developer</p>
-                </li>
-
-                <li>
-                    <img src="./images/Николай_Тарасов.jpg" alt="Фото Николая Тарасова" width="270">
-                    <h3 class="team-name">Николай Тарасов</h3>
-                    <p lang="en">Marketing</p>
-                </li>
-
-                <li>
-                    <img src="./images/Михаил_Ермаков.jpg" alt="Фото Михаила Ермакова" width="270">
-                    <h3 class="team-name">Михаил Ермаков</h3>
-                    <p lang="en">UI Designer</p>
-                </li>
-            </ul>
+            <div class="conteiner">
+                <h2 class="section-title">Наша команда</h2>
+                <ul class="team list">
+                    <li>
+                        <img src="./images/Игорь_Демьяненко.jpg" alt="Фото Игоря Демьяненко" width="270">
+                        <h3 class="team-name">Игорь Демьяненко</h3>
+                        <p lang="en">Product Designer</p>
+                    </li>
+                
+                    <li>
+                        <img src="./images/Ольга_Репина.jpg" alt="Фото Ольги Репиной" width="270">
+                        <h3 class="team-name">Ольга Репина</h3>
+                        <p lang="en">Frontend Developer</p>
+                    </li>
+                
+                    <li>
+                        <img src="./images/Николай_Тарасов.jpg" alt="Фото Николая Тарасова" width="270">
+                        <h3 class="team-name">Николай Тарасов</h3>
+                        <p lang="en">Marketing</p>
+                    </li>
+                
+                    <li>
+                        <img src="./images/Михаил_Ермаков.jpg" alt="Фото Михаила Ермакова" width="270">
+                        <h3 class="team-name">Михаил Ермаков</h3>
+                        <p lang="en">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
+            
         </section>
 
         <!-- Подвал -->
