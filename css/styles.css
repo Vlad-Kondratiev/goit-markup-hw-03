@@ -81,7 +81,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid coral;
+  outline: 2px solid coral; */
 }
 
 /* -------------------------------HEADER---------------------------------*/
@@ -158,12 +158,19 @@ a {
 
 .hero {
   text-align: center;
+  background-color: rgb(251, 223, 212);
 }
 
 .hero-title {
-  margin-top: 0;
+  /* display: inline-block; */
+  width: 696px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+
   color: var(--title-text-color);
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -178,6 +185,7 @@ a {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 136px;
+  margin-bottom: 200px;
 
   color: #e5e5e5;
   background-color: var(--accent-color);
@@ -187,10 +195,11 @@ a {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   text-decoration: none;
-  text-align: center;
 }
 
+
 /* ---------------------------FEATURES-------------------------- */
+
 .title {
   color: var(--title-text-color);
 }
@@ -214,7 +223,8 @@ a {
   letter-spacing: 0.03em;
 }
 
-/* Наша команда */
+
+/*------------------------------TEAM-------------------------------*/
 .section-team {
   background-color: #f5f4fa;
 }
@@ -222,7 +232,7 @@ a {
   color: var(--title-text-color);
 }
 
-/* ----------------FOOTER-------------------*/
+/* -----------------------------FOOTER------------------------------*/
 
 .footer-conteiner {
   margin-left: auto;
