@@ -30,6 +30,8 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -77,12 +79,31 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .conteiner {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   outline: 2px solid coral; */
 }
+
+.section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-section {
+  padding-top: 0;
+}
+
+
 
 /* -------------------------------HEADER---------------------------------*/
 
@@ -98,20 +119,25 @@ a {
 }
 
 .logo {
-  color: #000000;
+  color: var(--accent-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
-.logo-accent {
-  color: var(--accent-color);
+.logo-dark {
+  color: #212121;
 }
 
-.header-link {
+
+/* .logo-accent {
+  color: var(--accent-color);
+} */
+
+.site-nav-link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -123,12 +149,12 @@ a {
   color: var(--accent-color);
 }
 
-.header-link:hover,
-.header-link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-color);
 }
 
-.mail {
+.contacts-link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -136,12 +162,12 @@ a {
   letter-spacing: 0.02em;
 }
 
-.mail:hover,
-.mail:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
-.tel {
+/* .tel {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -152,7 +178,7 @@ a {
 .tel:hover,
 .tel:focus {
   color: var(--accent-color);
-}
+} */
 
 /* --------------------------------HERO---------------------------------- */
 
@@ -179,13 +205,13 @@ a {
   text-transform: uppercase;
 }
 
-.button {
+.hero-btn {
   display: inline-block;
   /* border: 1px solid transparent; */
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 136px;
-  margin-bottom: 200px;
+  margin-bottom: 0;
 
   color: #e5e5e5;
   background-color: var(--accent-color);
@@ -200,12 +226,15 @@ a {
 
 /* ---------------------------FEATURES-------------------------- */
 
+
 .title {
   color: var(--title-text-color);
 }
 
-.features .title,
-.worklist .title {
+.features-title ,
+.team-title,
+.team-title,
+.galery-title {
   color: var(--title-text-color);
 }
 
@@ -223,13 +252,18 @@ a {
   letter-spacing: 0.03em;
 }
 
+.features-title {
+  margin-bottom: 10px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
 
 /*------------------------------TEAM-------------------------------*/
-.section-team {
+.team-section {
   background-color: #f5f4fa;
-}
-.team .team-name {
-  color: var(--title-text-color);
 }
 
 /* -----------------------------FOOTER------------------------------*/
@@ -246,14 +280,22 @@ a {
 }
 
 .adress {
-  color: rgba(255, 255, 255, 1);
+  font-style: inherit;
+}
+
+.white {
+  color: rgba(255, 255, 255, 1);  
 }
 
 .auth-nav {
   color: rgba(255, 255, 255, 9);
 }
 
-.logo-footer {
+.logo-light {
+  color: #ffffff;
+}
+
+/* .logo-footer {
   color: var(--primary-bg-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -261,12 +303,10 @@ a {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
+} */
 
-.footer-nav {
+.footer-contacts-link {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -275,25 +315,52 @@ a {
 
 /* -------------------PORTFOLIO---------------------*/
 
-/* .button .filter:hover,
-.button .filter:focus {
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
+
+.filter-button {
+  padding: 6px 22px;
+
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: calc(26 / 16);
+  text-align: center;
   letter-spacing: 0.03em;
-} */
 
-.list {
+  background-color: #F5F4FA;
+
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.filter {
+  justify-content: center;
+  display: flex;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* .list {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-}
+} */
 
-.worklist {
+.galery-text {
   color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: calc(30 / 16)
 }

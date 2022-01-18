@@ -13,137 +13,141 @@
 </head>
 
 <body>
-    <!-- Шапка сайта -->
+    <!-------------------------------HEADER---------------------------------->
+
     <header class="header-page">
         <div class="header conteiner">
             <nav>
-                <a class="logo" href=""><span class="logo-accent">Web</span>Studio</a>
+                <a class="logo" href="">Web<span class="logo-dark">Studio</span></a>
                 <ul class="site-nav list">
-                    <li><a href="./index.html" class="header-link">Студия</a></li>
-                    <li><a href="" class="header-link current">Портфолио</a></li>
-                    <li><a href="" class="header-link">Контакты</a></li>
+                    <li class="site-nav-item"><a href="./index.html" class="site-nav-link">Студия</a></li>
+                    <li class="site-nav-item"><a href="./portfolio.html" class="site-nav-link current">Портфолио</a></li>
+                    <li class="site-nav-item"><a href="" class="site-nav-link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="auth-nav list">
-                <li><a class="mail" href="mailto:info@example.com" target="_blank">info@example.com</a>
-                <li><a class="tel" href="tel:+380991111111">+38 099 111 11 11</a>
+            <ul class="contacts">
+                <li class="contacts-item"><a class="contacts-link" href="mailto:info@example.com"
+                        target="_blank">info@example.com</a>
+                <li class="contacts-item"><a class="contacts-link" href="tel:+380991111111">+38 099 111 11 11</a>
             </ul>
         </div>
     </header>
 
+    <!-------------------------------GALERY----------------------------------->
+
         <div class="conteiner">
         <main>
             <section class="section">
-                <h1 class="visually-hidden ">Контент страницы Портфолио</h1>
-                <ul class="button secondary list">
-                    <li>
-                        <button class="filter" type="button">Все</button>
+                <h1 class="visually-hidden">Контент страницы Портфолио</h1>
+                <ul class="filter">
+                    <li class="filter-item">
+                        <button class="filter-button" type="button">Все</button>
                     </li>
-                    <li>
-                        <button class="filter" type="button">Веб-сайты</button>
+                    <li class="filter-item">
+                        <button class="filter-button" type="button">Веб-сайты</button>
                     </li>
-                    <li>
-                        <button class="filter" type="button">Приложения</button>
+                    <li class="filter-item">
+                        <button class="filter-button" type="button">Приложения</button>
                     </li>
-                    <li>
-                        <button class="filter" type="button">Дизайн</button>              
+                    <li class="filter-item">
+                        <button class="filter-button" type="button">Дизайн</button>              
                     </li>
-                    <li>
-                        <button class="filter" type="button">Маркетинг</button>
+                    <li class="filter-item">
+                        <button class="filter-button" type="button">Маркетинг</button>
                     </li>
                 </ul>
 
-                <ul class="list">
-                    <li>
+                <ul class="galery list">
+                    <li class="galery-item">
                         <a href="">
                             <img src="./images/portfolio1.jpg" 
                             alt="" 
                             width="370"
                             height="294">
-                            <h2 class="worklist">Технокряк</h2>
-                            
+                            <h2 class="galery-title">Технокряк</h2> 
+                            <p class="galery-text">Веб-сайт</p>
                         </a>
-                        <p>Веб-сайт</p>
+                        
                     </li>
-                    <li>
+                    <li class="galery-item">
                         <a href="">
                             <img src="./images/portfolio2.jpg" 
                             alt="" 
                             width="370" 
                             height="294">
-                            <h2 class="worklist">Постер New Orlean vs Golden Star</h2>
+                            <h2 class="galery-title">Постер New Orlean vs Golden Star</h2>
+                            <p class="galery-text">Дизайн</p>
                         </a>
-                        <p>Дизайн</p>
                     </li>
-                    <li>
+                    <li class="galery-item">
                         <a href="">
                             <img src="./images/portfolio3.jpg" 
                             alt="" 
                             width="370" 
                             height="294">
-                            <h2 class="worklist">Ресторан Seafood</h2>              
-                        </a> 
-                        <p>Приложение</p>
+                            <h2 class="galery-title">Ресторан Seafood</h2> 
+                            <p class="galery-text">Приложение</p>
+                        </a>                         
                     </li>
-                    <li>
+                    <li class="galery-item">
                         <a href="">
                             <img src="./images/portfolio4.jpg" 
                             alt="" 
                             width="370" 
                             height="294">
-                            <h2 class="worklist">Проект Prime</h2>                    
-                        </a>
-                        <p>Маркетинг</p>
+                            <h2 class="galery-title">Проект Prime</h2> 
+                            <p class="galery-text">Маркетинг</p>
+                        </a>                        
                     </li>
-                    <li>
+                    <li class="galery-item">
                         <a href="">
                             <img src="./images/portfolio5.jpg" 
                             alt="" 
                             width="370" 
                             height="294">
-                            <h2 class="worklist">Проект Boxes</h2>                       
+                            <h2 class="galery-title">Проект Boxes</h2> 
+                            <p class="galery-text">Приложение</p>
                         </a>
-                        <p>Приложение</p>
                     </li>
-                    <li>
+                    <li class="galery-item">
                         <a href="">
                             <img src="./images/portfolio6.jpg" 
                             alt="" 
                             width="370"
                             height="294">
-                            <h2 class="worklist">Inspiration has no Borders</h2>
-                        </a>
-                        <p>Веб-сайт</p>
+                            <h2 class="galery-title">Inspiration has no Borders</h2>
+                            <p class="galery-text">Веб-сайт</p>
+                        </a>                        
                     </li>
-                    <li>
+                    <li class="galery-item">
                         <a href="">
                             <img src="./images/portfolio7.jpg" 
                             alt="" 
                             width="370" 
                             height="294">
-                            <h2 class="worklist">Издание Limited Edition</h2>         
-                        </a>
-                        <p>Дизайн</p>
+                            <h2 class="galery-title">Издание Limited Edition</h2> 
+                            <p class="galery-text">Дизайн</p>
+                        </a>                        
                     </li>
-                    <li>
+                    <li class="galery-item">
                         <a href="">
                             <img src="./images/portfolio8.jpg" 
                             alt="" 
                             width="370" 
                             height="294">
-                            <h2 class="worklist">Проект LAB</h2>
-                        </a>
-                        <p>Маркетинг</p>
+                            <h2 class="galery-title worklist">Проект LAB</h2>
+                            <p class="galery-text">Маркетинг</p>
+                        </a>                        
                     </li>
-                    <li>
+                    <li class="galery-item">
                         <a href="">
                             <img src="./images/portfolio9.jpg" 
                             alt="" 
                             width="370" 
                             height="294">
-                            <h2 class="worklist">Growing Business</h2>                     
-                        </a>
-                        <p>Приложение</p>
+                            <h2 class="galery-title">Growing Business</h2>
+                            <p class="galery-text">Приложение</p>
+                        </a>                        
                     </li>
                 </ul>
             </section>           
@@ -151,10 +155,11 @@
         </div>
         
         
-        <!-- Подвал -->
+        <!-------------------------------FOOTER-------------------------------->
+
         <footer class="footer">
             <div class="footer-conteiner">
-                <a class="logo-footer" href=""><span class="logo-accent">Web</span>Studio</a>
+                <a class="logo" href="">Web<span class="logo-light">Studio</span></a>
                 <address class="adress">
                     <ul class="list">
                         <li><a class="adress" href="https://goo.gl/maps/ULEKr4xhVnMLPp338" target="_blank">г. Киев, пр-т Леси
