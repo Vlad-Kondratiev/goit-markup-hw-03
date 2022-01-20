@@ -60,14 +60,10 @@ p {
 
 /* можно убрать точки у li c class="list"*/
 .list {
-  padding: 0%;
+  padding: 0;
   margin: 0;
   list-style: none;
 }
-/* можно убрать точки у всех li */
-/* ul {
-  list-style: none;
-} */
 
 /* button {
   list-style: none;
@@ -91,8 +87,14 @@ ul {
 .conteiner {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
-  outline: 2px solid coral; */
+  outline: 2px solid coral;
 }
 
 .section {
@@ -102,13 +104,11 @@ ul {
   padding-bottom: 94px;
 }
 
-.work-section {
+/* .work-section {
   padding-top: 0;
-}
-
+} */
 
 /* -------------------------------HEADER---------------------------------*/
-
 
 .header-page {
   background-color: var(--primary-bg-color);
@@ -123,6 +123,8 @@ ul {
   outline: 2px solid coral;
   padding-top: 24px;
   padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .logo {
@@ -140,8 +142,8 @@ ul {
 }
 
 .site-nav {
-    display: flex;
-    margin-left: 94px;
+  display: flex;
+  margin-left: 94px;
 }
 
 /* .site-nav .site-nav-item:not(:last-child) {
@@ -189,8 +191,8 @@ ul {
 }
 
 .contacts {
-    display: flex;
-    margin-left: auto;
+  display: flex;
+  margin-left: auto;
 }
 
 .contacts-link {
@@ -203,12 +205,11 @@ ul {
   margin-left: 50px;
 }
 
-
 /* --------------------------------HERO---------------------------------- */
 
 .hero {
   text-align: center;
-  background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .hero-title {
@@ -245,7 +246,8 @@ ul {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   text-decoration: none;
-} */
+}
+*/
 
 
 /* ---------------------------FEATURES-------------------------- */
@@ -255,7 +257,7 @@ ul {
   color: var(--title-text-color);
 }
 
-.features-title ,
+.features-title,
 .team-title,
 .team-title,
 .galery-title {
@@ -296,8 +298,8 @@ ul {
   display: flex;
 }
 
-.works .works-item {
-  width: 270px;
+.works-item {
+  width: 370px;
   margin-right: 30px;
 }
 
@@ -339,19 +341,15 @@ ul {
   margin-right: 0px;
 }
 
-
 /* -----------------------------FOOTER------------------------------*/
 
-.footer-conteiner {
+.conteiner {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   outline: 2px solid coral;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.logo.logo-footer {
-  margin-bottom: 20px;
 }
 
 .footer {
@@ -363,11 +361,16 @@ ul {
 }
 
 .white {
-  color: rgba(255, 255, 255, 1);  
+  color: rgba(255, 255, 255, 1);
 }
 
 .auth-nav {
   color: rgba(255, 255, 255, 9);
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .logo-light {
@@ -392,8 +395,14 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* -------------------PORTFOLIO---------------------*/
+.footer-contacts-item {
+  margin-bottom: 9px;
+}
+.footer-contacts-item:nth-child(3n) {
+  margin-bottom: 0px;
+}
 
+/* -------------------PORTFOLIO---------------------*/
 
 .filter-button {
   padding: 6px 22px;
@@ -405,7 +414,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 
   border-radius: 4px;
   border: transparent;
@@ -424,7 +433,7 @@ ul {
 }
 
 .filter-item:not(:last-child) {
-  margin-right: 8px;  
+  margin-right: 8px;
 }
 
 .filter-conteiner {
@@ -445,7 +454,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
-  line-height: calc(30 / 16)
+  line-height: calc(30 / 16);
 }
 
 .galery-item-content {
@@ -465,8 +474,13 @@ ul {
 .galery-item {
   width: 370px;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .galery-item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.galery-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
