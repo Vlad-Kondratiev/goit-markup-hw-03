@@ -94,7 +94,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid coral;
+  /* outline: 2px solid coral; */
 }
 
 .section {
@@ -103,10 +103,6 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-/* .work-section {
-  padding-top: 0;
-} */
 
 /* -------------------------------HEADER---------------------------------*/
 
@@ -120,11 +116,15 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid coral;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* outline: 2px solid coral; */
+  padding-top: 32px;
+  padding-bottom: 32px;
   padding-left: 15px;
   padding-right: 15px;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 
 .logo {
@@ -149,6 +149,7 @@ ul {
 /* .site-nav .site-nav-item:not(:last-child) {
   margin-right: 50px;
 } */
+
 /* применяется к элементам перед которыми есть сосед */
 .site-nav .site-nav-item + .site-nav-item {
   margin-left: 50px;
@@ -267,13 +268,13 @@ ul {
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
-  color: var(--title-text-color);
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 .features-title {
@@ -298,6 +299,10 @@ ul {
   display: flex;
 }
 
+.work-section {
+  padding-top: 0;
+}
+
 .works-item {
   width: 370px;
   margin-right: 30px;
@@ -308,6 +313,7 @@ ul {
 }
 
 /*------------------------------TEAM-------------------------------*/
+
 .team-section {
   background-color: #f5f4fa;
 }
@@ -315,9 +321,12 @@ ul {
 .team-item-content {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -343,13 +352,15 @@ ul {
 
 /* -----------------------------FOOTER------------------------------*/
 
-.conteiner {
+.footer-conteiner {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  outline: 2px solid coral;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid coral; */
 }
 
 .footer {
@@ -377,16 +388,6 @@ ul {
   color: #ffffff;
 }
 
-/* .logo-footer {
-  color: var(--primary-bg-color);
-  text-decoration: none;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-} */
-
 .footer-contacts-link {
   font-family: Roboto;
   font-size: 14px;
@@ -398,6 +399,7 @@ ul {
 .footer-contacts-item {
   margin-bottom: 9px;
 }
+
 .footer-contacts-item:nth-child(3n) {
   margin-bottom: 0px;
 }
@@ -406,7 +408,6 @@ ul {
 
 .filter-button {
   padding: 6px 22px;
-
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -440,14 +441,7 @@ ul {
   margin-bottom: 50px;
 }
 
-/* .list {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-} */
+/* ----------------------GALERY---------------------- */
 
 .galery-text {
   color: var(--primary-text-color);
@@ -460,6 +454,9 @@ ul {
 .galery-item-content {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
 }
 
 .galery-title {
