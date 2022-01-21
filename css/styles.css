@@ -459,8 +459,12 @@ ul {
   border: 1px solid #eeeeee;
 }
 
-.galery-title {
+.galery-item .galery-title {
   margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .galery {
