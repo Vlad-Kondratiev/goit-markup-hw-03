@@ -93,8 +93,6 @@ ul {
 }
 
 .section {
-  margin-top: 0;
-  margin-bottom: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -237,11 +235,13 @@ nav {
   letter-spacing: 0.06em;
   text-decoration: none;
 }
-*/
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
 
 /* ---------------------------FEATURES-------------------------- */
-
 
 .title {
   color: var(--title-text-color);
@@ -268,11 +268,9 @@ nav {
 
 .features-title {
   margin-bottom: 10px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
